@@ -1,0 +1,173 @@
+*{
+  box-sizing:border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*colors*/
+header {background-color: #000000;}
+body {background-color: #dfe0e1;}
+aside {color: #29627e;}
+h1 {color: #E8CF2B;}
+h2, h3, p, footer {color: #4286f4;}
+
+/*media queries*/
+@media screen and (max-width:800px) {
+  *{
+    width:100%;
+      }
+  /* .hamburger {
+    float: none;
+    width: 100%
+  } */
+}
+
+body {
+  /*background-color: #dfe0e1;*/
+  background-image: url(../images/lemon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*The color of all the other text within the body of the page*/
+  color: #4286f4;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-style: normal;
+  padding-left: 0 2em 0 2em;
+}
+
+/* fonts */
+h1 {
+  padding-left: none;
+  font-size: 300%;
+  font-family: "Fira Sans Extra Condensed", cursive, sans-serif;
+}
+h2 {
+  padding-left: 2em;
+  font-size: 200%;
+  font-family: "Fira Sans Extra Condensed", cursive, sans-serif;
+}
+h3 {
+  padding-left: 4em;
+  font-size: 100%;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+p {
+  padding-left: 4em;
+  font-size: 1em;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+/* header style */
+header {
+  margin-top: 3em;
+  height: auto;
+}
+
+main {
+  width: 80%;
+  float: left;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* page style */
+main {
+  width: 70%;
+  float: left;
+  height: auto;
+  margin-right: 5em;
+  box-sizing: border-box;
+}
+aside {
+  width: 20%;
+  float: right;
+  clear: both;
+  padding-left: .5em;
+  margin-left: 0.5em;
+  box-shadow: inset 5px 0 5px -5px #ffffff;
+  font-style: italic;
+  line-height: 1.5em;
+  box-sizing: border-box;
+}
+aside > p {
+  vertical-align: middle;
+}
+
+/* footer style */
+footer {
+  padding-top: 4em;
+  float: right;
+  clear: both;
+  font-size: 0.8em;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+/* unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: blue;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+/* classes */
+.intro {
+  color: purple;
+}
+.other {
+  color: #4286f4;
+}
+.center {
+  text-align: center;
+}
+.image {
+  float: left;
+  display: inline-block;
+  margin-left: 4em;
+  margin-right: -2em;
+  margin-bottom: 2em;
+  padding:0.5em;
+  border-style: solid;
+  border-size: 0.1em;
+  border-color: #45323F;
+  border-radius: 1em;
+}
+.video {
+  float: left;
+  padding:0.1em;
+  border-style: solid;
+  border-size: 0.1em;
+  border-color: #45323F;
+  border-radius: 1em;
+  }
+
+/*ID*/
+#id {
+  float: left;
+  width: 80%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* list */
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: absolute; top: 3%; right:0;
+  }
+   /* Display a list of links as a horizontal menu */
+  li {
+      display: inline;
+      padding: 1em;
+  }
