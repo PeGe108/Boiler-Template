@@ -10,17 +10,6 @@ aside {color: #29627e;}
 h1 {color: #E8CF2B;}
 h2, h3, p, footer {color: #4286f4;}
 
-/*media queries*/
-@media screen and (max-width:800px) {
-  *{
-    width:100%;
-      }
-  /* .hamburger {
-    float: none;
-    width: 100%
-  } */
-}
-
 body {
   /*background-color: #dfe0e1;*/
   background-image: url(../images/lemon.jpg);
@@ -171,3 +160,17 @@ a:active {
       display: inline;
       padding: 1em;
   }
+
+  /*media queries*/
+    @media (max-width: 800px) {
+      *{
+        width:100%;
+          }
+      h1 {
+        font-size: 100%;
+      }
+      body {
+        background-image: none;
+        background-color: #000;
+      }
+    }
