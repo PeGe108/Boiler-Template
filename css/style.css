@@ -256,7 +256,7 @@ a:active {
 
   /* media querie for topnav */
   @media screen and (max-width: 1100px) {
-  /*  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
@@ -273,7 +273,7 @@ a:active {
     display: block;
     width: 100%;
     text-align: left;
-    }*/
+    }
     h1 {
       font-size: 100%;
     }
