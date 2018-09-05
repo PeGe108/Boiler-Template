@@ -314,3 +314,228 @@ a:active {
       }
 }
 
+*{
+  box-sizing:border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*colors*/
+header {background-color: #ffffff;} /*white*/
+body {background-color: #ffffff;} /*white*/
+aside {color: #29627e;} /*teal*/
+h1 {color: #DB004F;} /*pink*/
+h2, h3, p, footer {color: #007273;} /*teal*/
+
+body {
+  background-color: #ffffff;
+  /*background-image: url(../images/lemon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  /*The color of all the other text within the body of the page*/
+  color: #007273;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-style: normal;
+  padding: 0 2em 0 2em;
+  margin: 2;
+}
+
+/* fonts */
+h1 {
+  padding: none;
+  font-size: 2em;
+  font-family: "Fira Sans Extra Condensed", cursive, sans-serif;
+}
+h2 {
+  padding: none;
+  font-size: 1.75em;
+  font-family: "Fira Sans Extra Condensed", cursive, sans-serif;
+}
+h3 {
+  padding: 1em 1em;
+  font-size: 1.25em;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+p {
+  padding: 1em 1em;
+  font-size: 0.75em;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+/* header style */
+header {
+  margin-top: 5em;
+  height: auto;
+}
+
+/* main style */
+main {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin-right: 5em;
+}
+
+/* Responsive Columns */
+.one-half, .one-third, .two-thirds, .three-fourths, .one-fourth {
+float:left;
+margin-bottom:20px;
+margin-right:4%;
+position:relative;
+background: #333333; /* change to color just for display purposes */
+}
+.one-half {
+width: 48%;
+}
+.one-third {
+width: 30.66%;
+}
+.two-thirds {
+width: 65.33%;
+}
+.one-fourth {
+width: 22%;
+}
+.three-fourths {
+width: 74%;
+}
+.last-col {
+clear:right;
+margin-right:0;
+}
+
+/* aside style */
+/*aside {
+  float: left;
+  clear: both;
+  padding-left: 3em;
+  padding-right: 1em;
+  padding-top: 3em;
+  margin-left: 0.5em;
+  box-shadow: inset 5px 0 5px -5px #ffffff;
+  font-style: italic;
+  line-height: 1.5em;
+}
+aside > p {
+  vertical-align: middle;
+  text-align: center;
+}*/
+
+/* footer style */
+footer {
+  padding-top: 4em;
+  float: right;
+  clear: both;
+  font-size: 0.6em;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+/*no underscore at links*/
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+/* unvisited and visited link */
+a:link, a:visited  {
+    color: #007273;
+}
+
+/* mouse over and selected link */
+a:hover, a:active {
+    color: #DB004F;
+}
+
+/* classes */
+.intro {
+  color: purple;
+}
+.b {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+.image {
+  float: left;
+  width: 100%;
+  hight: auto;
+  /*display: inline-block;
+  margin-left: 5em;
+  margin-right: -2em;*/
+  padding:0.5em;
+  border-style: solid;
+  border-size: 1%;
+  border-color: #FFBFEA;
+  border-radius: 1em;
+}
+.video {
+  float: left;
+  width: 100%;
+  hight: auto;
+  padding:0.5em;
+  border-style: solid;
+  border-size: 1%;
+  border-color: #FFBFEA;
+  border-radius: 1em;
+  }
+
+/*ID*/
+/*#id xyz {
+  float: left;
+  width: 80%;
+  display: inline-block;
+  box-sizing: border-box;
+}*/
+
+/* list */
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: absolute; top: 3%; right:0;
+  }
+   /* Display a list of links as a horizontal menu */
+  topnav {
+      display: inline;
+      padding: 0 0.3em 0 2em;
+      background-color: none;
+      overflow: hidden;
+      font-size: 50%;
+      }
+
+/*media queries*/
+/* screen width 400px */
+@media only screen and (max-width: 25em) {
+      *{
+        width:100%;
+          }
+      body {
+        background-image: none;
+        background-color: white;
+      }
+      .one-half, .one-third, .two-thirds, .three-fourths, .one-fourth {
+        width: 100%;
+        clear: both;
+      }
+      .image {
+        width: 100%;
+        float: left;
+        align-items: center;
+        margin: none;
+        border: none;
+        }
+      }
+
+/* screen width 1104px */
+@media only screen and (max-width: 70em) {
+    *{
+      width:100%;
+      }
+    body {
+      background-image: none;
+      background-color: red;
+      }
+    /*.one-half, .one-third, .two-thirds, .three-fourths, .one-fourth {
+      width: 100%;
+      clear: both;
+    }*/
+}
