@@ -5,31 +5,47 @@
     <meta charset="utf-8">
     <title>Project Template</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    </head>
-  <body>
+  </head>
 
-    <nav id="navigation" role="navigation">
-      <ul>
-        <topnav><a href="Home.html">Home</a></li>
-        <topnav><a href="#" >Page 1</a></li>
-        <topnav><a href="#" >Page 2</a></li>
-        <topnav><a href="#" >Page 3</a></li>
-        <topnav><a "mailto:testing@email.com">Contact us</a></li>
-        <topnav><a href="http://www.23codestreet.com/" target="_blank">Mothership</a></li>
-      </ul>
-    </nav>
+  <body>
+    <script>
+      $(".burger").click(function() {
+        $(this).toggleClass('active');
+        $("ul.menu li").slideToggle('fast');
+      })
+      $(window).resize(function() {
+        if ($(window).width() > 650) {
+            $('ul.menu li').removeAttr('style');
+        }
+      })
+    </script>
+
+      <div id="top">
+        <div id="topinner">
+          <div id="logo">
+              <img src="images/PeGe-logo.png" alt="logo yellow letters P E G E">
+          </div>
+          <nav id="navigation" role="navigation">
+             <ul>
+               <li><a href="Home.html">Home</a></li>
+               <li><a href="#" >Page 1</a></li>
+               <li><a href="#" >Page 2</a></li>
+               <li><a href="#" >Page 3</a></li>
+               <li><a "mailto:testing@email.com">Contact us</a></li>
+               <li><a href="http://www.23codestreet.com/" target="_blank">Mothership</a></li>
+             </ul>
+          </nav>
+      </div>
+    </div>
 
     <header id="header" role="banner">
-      <!-- <img id=logo src="images/xxxxxxxlogo.jpg" alt="logo"> -->
       <h1 class="center">BOILER TEMPLATE</h1>
     </header>
 
     <main id="mainContent" role="main">
       <h2 class="center">SUBTITLE</h2>
-
       <br>
-
-      <h2>Responsive Columns</h2>
+      <h2>Page Titel</h2>
       <div class="one-half"> <p class="intro">This is a webpage template.</p></div>
       <div class="one-half last-col">   <p class="b">Still learning to code!</p> </div>
       <div class="one-third">  <img class="image" src="images/landscape.jpg" alt="image description"> </div>
