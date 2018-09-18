@@ -207,7 +207,7 @@ a:hover, a:active {
 
 /*media queries*/
 /* screen width 600px */
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 660px) {
       *{
         width:100%;
       }
@@ -232,25 +232,32 @@ a:hover, a:active {
       #logo {
         width: 20%;
       }
-      #navigation {
-        display: none;
+      #navigation li  {
+           display:none;
       }
       h2 {
         text-align: center;
       }
-
-/* screen width 1000px */
-@media only screen and (min-width: 31em) and (max-width: 50em) {
-    *{
-      width:100%;
-    }
-    body {
-      background-image: none;
-      background-color: none;
-    }
-    .image {
-      border: none;
-    }
-    #logo {
-      width: 10%;
 }
+
+@media only screen and (min-width: 661px) and (max-width: 1000px) {
+        *{
+          width:100%;
+        }
+        body {
+          background-image: none;
+          background-color: none;
+        }
+        main {
+          margin-right: none;
+        }
+        .image {
+          border: none;
+        }
+        #logo {
+          width: 10%;
+        }
+        #navigation {
+          display: none;
+        }
+  }
